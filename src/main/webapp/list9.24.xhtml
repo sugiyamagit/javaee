@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>JavaScript</h:head>
+<body>
+	<h:outputLabel id="lbl" value="Perfect Java EE" />
+	<h:button value="JavaScript実行" onclick="viewLabel();" />
+
+	<script type="text/javascript">
+		function viewLabel(){
+		var lblElement = document.getElementById("lbl");
+		alert(element.innerHTML);
+		}
+	</script>
+</body>
+</html>

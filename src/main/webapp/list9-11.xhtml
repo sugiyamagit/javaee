@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>dataTable</h:head>
+<body>
+	<h:dataTable var="emp" value="#{employeeBean.listEmp}" border="1">
+		<f:facet name="header">
+			<h:outputText value="header" />
+
+		</f:facet>
+
+		<h:column>
+			<h:outputText value="#{emp.id}" />
+		</h:column>
+		<h:column>
+			<h:outputText value="#{emp.name}" />
+		</h:column>
+
+		<f:facet name="footer">
+			<h:outputText value="footer" />
+		</f:facet>
+
+	</h:dataTable>
+
+</body>
+</html>
